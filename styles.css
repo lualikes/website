@@ -175,10 +175,5 @@ footer {
        position: relative;
        min-width: 600px;
    }
-   .card {
-       display: flex;
-       position: relative;
-       justify-content: center;
-       min-width: 200px; !important
-   }
+
 }
