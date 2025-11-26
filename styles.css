@@ -1,0 +1,184 @@
+/* DEVELOPER Julia Navarro, IS117-007, Fall 2025 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.left {
+    float: left;
+    & ul, & p {
+        width: 50%;
+    }
+}
+.right{
+    clear: left;
+    float: right; !important
+    & img {
+        width: 30%;
+    }
+}
+.content{
+    background-color: plum;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: plum;
+}
+h1, p, h2, h6{
+    padding: 5px;
+    margin-left: 2%;
+    margin-right: 3%;
+}
+.bottom {
+    padding-bottom: 2em;
+}
+.center {
+    text-align: center;
+}
+h1 {
+    font-weight: bold;
+    padding-top: 10px;
+}
+h6 {
+    font-style: italic;
+    margin-bottom: 2%;
+}
+img {
+    padding: 1em;
+}
+.lineafter{
+    border-bottom: 2px solid purple;
+}
+p.lineafter{
+    padding-bottom: 1em;
+}
+.card {
+    background-color: #ffd6ff;
+    margin: .75em;
+    margin-bottom: 1.5em;
+    margin-left: 2%;
+}
+
+.carousel {
+    float: right;
+    padding: .5em 0 1em;
+    width: 70%;
+}
+.carousel-caption {
+    background-color: rgba(128, 0, 128, 0.75);
+}
+nav {
+    background-color: purple;
+    & img {
+        margin: 0;
+        padding: 0;
+    }
+}
+.cardmid {
+    float: right;
+    align-content: center;
+}
+.sideimage {
+    float: right;
+    margin-left: 10px;
+    width: 30%;
+    margin-top: 4%;
+}
+
+
+.text-image {
+    float: left;
+    text-align: left;
+    width: 50%;
+    margin-left: 8%;
+    margin-top: 4%;
+
+}
+.card-container {
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+.sideimage1 {
+    float: right;
+    margin-left: 10px;
+    width: 50%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    border-radius: 20%;
+}
+.text-image1 {
+    float: left;
+    text-align: left;
+    width: 40%;
+    margin-left: 4%;
+    margin-top: 4%;
+    margin-bottom: 4%
+}
+.sideimage2 {
+    float: right;
+    margin-left: 5%;
+    width: 30%;
+}
+.text-image2 {
+
+    float: left;
+    text-align: left;
+    width: 25%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    margin-left: 2%;
+    font-size: 1.3em;
+}
+.newborder{
+    border-top: 2px solid purple;
+    border-bottom: 2px solid purple;
+}
+footer {
+    background-color: purple;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color:plum;
+    text-align: center;
+}
+@media screen and (min-width: 400px) {
+    h1, h6, p {
+        text-align: left;
+        display: flex;
+        flex-basis: 75%;
+        position: relative;
+        & img {
+            width: clamp(40px, 15%, 80px);
+            display: block;
+            float: left;
+            margin: .75em 1em;
+        }
+    }
+    .sideimage1, .sideimage3 {
+        display: flex;
+        position: relative;
+        flex-basis: 20%;
+        max-height: 900px;
+        min-width: 600px;
+    }
+    .sideimage2 {
+        display: flex;
+        position: relative;
+        flex-basis: 50%;
+        max-height: 900px;
+        min-width: 800px;
+    }
+   .card-container {
+       display: flex;
+       justify-content: center;
+       position: relative;
+       min-width: 600px;
+   }
+   .card {
+       display: flex;
+       position: relative;
+       justify-content: center;
+       min-width: 200px; !important
+   }
+}
